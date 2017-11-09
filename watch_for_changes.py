@@ -7,6 +7,9 @@ from watchdog.events import PatternMatchingEventHandler
 
 
 class MyHandler(PatternMatchingEventHandler):
+    """
+    python watch_for_changes.py path\to\image\directory
+    """
     patterns = ["*.png", "*.jpeg"]
 
     def process(self, event):
